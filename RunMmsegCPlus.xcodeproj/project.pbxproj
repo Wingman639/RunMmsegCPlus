@@ -25,6 +25,11 @@
 		DBE1BA5714CAAEE600BBECBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE1BA2D14CAAEE500BBECBE /* Foundation.framework */; };
 		DBE1BA5F14CAAEE600BBECBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBE1BA5D14CAAEE600BBECBE /* InfoPlist.strings */; };
 		DBE1BA6214CAAEE600BBECBE /* RunMmsegCPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE1BA6114CAAEE600BBECBE /* RunMmsegCPlusTests.m */; };
+		DBE1BA7714CAAF9500BBECBE /* algor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE1BA6C14CAAF9500BBECBE /* algor.cpp */; };
+		DBE1BA7814CAAF9500BBECBE /* dict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE1BA6F14CAAF9500BBECBE /* dict.cpp */; };
+		DBE1BA7914CAAF9500BBECBE /* memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE1BA7114CAAF9500BBECBE /* memory.cpp */; };
+		DBE1BA7A14CAAF9500BBECBE /* mmseg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBE1BA7314CAAF9500BBECBE /* mmseg.cpp */; };
+		DBE1BA7D14CAB00600BBECBE /* interfaceOfMmseg.mm in Sources */ = {isa = PBXBuildFile; fileRef = DBE1BA7C14CAB00600BBECBE /* interfaceOfMmseg.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,27 +47,40 @@
 		DBE1BA2B14CAAEE500BBECBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DBE1BA2D14CAAEE500BBECBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DBE1BA2F14CAAEE500BBECBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DBE1BA3314CAAEE500BBECBE /* RunMmsegCPlus-Info.plist */ = {isa = PBXFileReference; path = "RunMmsegCPlus-Info.plist"; sourceTree = "<group>"; };
+		DBE1BA3314CAAEE500BBECBE /* RunMmsegCPlus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RunMmsegCPlus-Info.plist"; sourceTree = "<group>"; };
 		DBE1BA3514CAAEE500BBECBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBE1BA3714CAAEE500BBECBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DBE1BA3914CAAEE500BBECBE /* RunMmsegCPlus-Prefix.pch */ = {isa = PBXFileReference; path = "RunMmsegCPlus-Prefix.pch"; sourceTree = "<group>"; };
-		DBE1BA3A14CAAEE500BBECBE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DBE1BA3914CAAEE500BBECBE /* RunMmsegCPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunMmsegCPlus-Prefix.pch"; sourceTree = "<group>"; };
+		DBE1BA3A14CAAEE500BBECBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBE1BA3B14CAAEE500BBECBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DBE1BA3E14CAAEE600BBECBE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DBE1BA4014CAAEE600BBECBE /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		DBE1BA4014CAAEE600BBECBE /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		DBE1BA4114CAAEE600BBECBE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		DBE1BA4314CAAEE600BBECBE /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		DBE1BA4514CAAEE600BBECBE /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		DBE1BA4714CAAEE600BBECBE /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		DBE1BA4714CAAEE600BBECBE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		DBE1BA4814CAAEE600BBECBE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DBE1BA4A14CAAEE600BBECBE /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		DBE1BA4C14CAAEE600BBECBE /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		DBE1BA5314CAAEE600BBECBE /* RunMmsegCPlusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunMmsegCPlusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE1BA5414CAAEE600BBECBE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DBE1BA5C14CAAEE600BBECBE /* RunMmsegCPlusTests-Info.plist */ = {isa = PBXFileReference; path = "RunMmsegCPlusTests-Info.plist"; sourceTree = "<group>"; };
+		DBE1BA5C14CAAEE600BBECBE /* RunMmsegCPlusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RunMmsegCPlusTests-Info.plist"; sourceTree = "<group>"; };
 		DBE1BA5E14CAAEE600BBECBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DBE1BA6014CAAEE600BBECBE /* RunMmsegCPlusTests.h */ = {isa = PBXFileReference; path = RunMmsegCPlusTests.h; sourceTree = "<group>"; };
+		DBE1BA6014CAAEE600BBECBE /* RunMmsegCPlusTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunMmsegCPlusTests.h; sourceTree = "<group>"; };
 		DBE1BA6114CAAEE600BBECBE /* RunMmsegCPlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunMmsegCPlusTests.m; sourceTree = "<group>"; };
+		DBE1BA6C14CAAF9500BBECBE /* algor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = algor.cpp; sourceTree = "<group>"; };
+		DBE1BA6D14CAAF9500BBECBE /* algor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algor.h; sourceTree = "<group>"; };
+		DBE1BA6E14CAAF9500BBECBE /* chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chunk.h; sourceTree = "<group>"; };
+		DBE1BA6F14CAAF9500BBECBE /* dict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict.cpp; sourceTree = "<group>"; };
+		DBE1BA7014CAAF9500BBECBE /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
+		DBE1BA7114CAAF9500BBECBE /* memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = memory.cpp; sourceTree = "<group>"; };
+		DBE1BA7214CAAF9500BBECBE /* memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
+		DBE1BA7314CAAF9500BBECBE /* mmseg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mmseg.cpp; sourceTree = "<group>"; };
+		DBE1BA7414CAAF9500BBECBE /* rules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rules.h; sourceTree = "<group>"; };
+		DBE1BA7514CAAF9500BBECBE /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = token.h; sourceTree = "<group>"; };
+		DBE1BA7614CAAF9500BBECBE /* word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = word.h; sourceTree = "<group>"; };
+		DBE1BA7B14CAB00600BBECBE /* interfaceOfMmseg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interfaceOfMmseg.h; path = mmseg_cpp/interfaceOfMmseg.h; sourceTree = "<group>"; };
+		DBE1BA7C14CAB00600BBECBE /* interfaceOfMmseg.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = interfaceOfMmseg.mm; path = mmseg_cpp/interfaceOfMmseg.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +107,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DBE113DE14CBB24F0039D906 /* objcMmseg */ = {
+			isa = PBXGroup;
+			children = (
+				DBE1BA7B14CAB00600BBECBE /* interfaceOfMmseg.h */,
+				DBE1BA7C14CAB00600BBECBE /* interfaceOfMmseg.mm */,
+			);
+			name = objcMmseg;
+			sourceTree = "<group>";
+		};
 		DBE1BA1C14CAAEE500BBECBE = {
 			isa = PBXGroup;
 			children = (
+				DBE113DE14CBB24F0039D906 /* objcMmseg */,
+				DBE1BA6B14CAAF9500BBECBE /* mmseg_cpp */,
 				DBE1BA3114CAAEE500BBECBE /* RunMmsegCPlus */,
 				DBE1BA5A14CAAEE600BBECBE /* RunMmsegCPlusTests */,
 				DBE1BA2A14CAAEE500BBECBE /* Frameworks */,
@@ -166,6 +195,24 @@
 				DBE1BA5D14CAAEE600BBECBE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBE1BA6B14CAAF9500BBECBE /* mmseg_cpp */ = {
+			isa = PBXGroup;
+			children = (
+				DBE1BA6C14CAAF9500BBECBE /* algor.cpp */,
+				DBE1BA6D14CAAF9500BBECBE /* algor.h */,
+				DBE1BA6E14CAAF9500BBECBE /* chunk.h */,
+				DBE1BA6F14CAAF9500BBECBE /* dict.cpp */,
+				DBE1BA7014CAAF9500BBECBE /* dict.h */,
+				DBE1BA7114CAAF9500BBECBE /* memory.cpp */,
+				DBE1BA7214CAAF9500BBECBE /* memory.h */,
+				DBE1BA7314CAAF9500BBECBE /* mmseg.cpp */,
+				DBE1BA7414CAAF9500BBECBE /* rules.h */,
+				DBE1BA7514CAAF9500BBECBE /* token.h */,
+				DBE1BA7614CAAF9500BBECBE /* word.h */,
+			);
+			path = mmseg_cpp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +329,11 @@
 				DBE1BA3C14CAAEE500BBECBE /* AppDelegate.m in Sources */,
 				DBE1BA4214CAAEE600BBECBE /* FirstViewController.m in Sources */,
 				DBE1BA4914CAAEE600BBECBE /* SecondViewController.m in Sources */,
+				DBE1BA7714CAAF9500BBECBE /* algor.cpp in Sources */,
+				DBE1BA7814CAAF9500BBECBE /* dict.cpp in Sources */,
+				DBE1BA7914CAAF9500BBECBE /* memory.cpp in Sources */,
+				DBE1BA7A14CAAF9500BBECBE /* mmseg.cpp in Sources */,
+				DBE1BA7D14CAB00600BBECBE /* interfaceOfMmseg.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +431,7 @@
 		DBE1BA6614CAAEE600BBECBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RunMmsegCPlus/RunMmsegCPlus-Prefix.pch";
 				INFOPLIST_FILE = "RunMmsegCPlus/RunMmsegCPlus-Info.plist";
@@ -390,6 +443,7 @@
 		DBE1BA6714CAAEE600BBECBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RunMmsegCPlus/RunMmsegCPlus-Prefix.pch";
 				INFOPLIST_FILE = "RunMmsegCPlus/RunMmsegCPlus-Info.plist";
@@ -406,6 +460,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RunMmsegCPlus/RunMmsegCPlus-Prefix.pch";
 				INFOPLIST_FILE = "RunMmsegCPlusTests/RunMmsegCPlusTests-Info.plist";
@@ -423,6 +478,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RunMmsegCPlus/RunMmsegCPlus-Prefix.pch";
 				INFOPLIST_FILE = "RunMmsegCPlusTests/RunMmsegCPlusTests-Info.plist";
@@ -451,6 +507,7 @@
 				DBE1BA6714CAAEE600BBECBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBE1BA6814CAAEE600BBECBE /* Build configuration list for PBXNativeTarget "RunMmsegCPlusTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +516,7 @@
 				DBE1BA6A14CAAEE600BBECBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

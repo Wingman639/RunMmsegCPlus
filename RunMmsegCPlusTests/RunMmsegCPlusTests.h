@@ -7,7 +7,10 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "interfaceOfMmseg.h"
 
-@interface RunMmsegCPlusTests : SenTestCase
+@interface RunMmsegCPlusTests : SenTestCase{
+    interfaceOfMmseg *mmseg;
+}
 
 @end
