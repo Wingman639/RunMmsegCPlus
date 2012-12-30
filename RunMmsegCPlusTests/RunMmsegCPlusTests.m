@@ -77,18 +77,22 @@
 
 - (void)testChineseWordText
 {
-    NSArray *words = [mmseg run:@"我们去吃饭如何？two,three,four"];
-    STAssertEquals(4u, [words count], nil);
+    NSArray *words = [mmseg run:@"我们去吃饭如何? two,three,four 走"];
+    NSLog(@"words: %@", words);
+    STAssertEquals(5u, [words count], nil);
     
     NSString *word1 = [words objectAtIndex:0];
     NSString *word2 = [words objectAtIndex:1];
     NSString *word3 = [words objectAtIndex:2];
     NSString *word4 = [words objectAtIndex:3];
+    NSString *word5 = [words objectAtIndex:4];
 
     
     STAssertEquals(NSOrderedSame, [word1 compare:@"我们"], nil);
     STAssertEquals(NSOrderedSame, [word2 compare:@"去"], nil);
     STAssertEquals(NSOrderedSame, [word3 compare:@"吃饭"], nil);
     STAssertEquals(NSOrderedSame, [word4 compare:@"如何"], nil);
+    STAssertEquals(NSOrderedSame, [word5 compare:@"走"], nil);
+    
 }
 @end
